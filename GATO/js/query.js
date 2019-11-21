@@ -2,9 +2,9 @@ $(document).ready(function() {
     var move=1;
     var play=true;
 
-    $("h1").css({"margin-left":"534px","font-family":"helvetica","color":"#800000"});
-    $("body").css("background-color","#97aabd");
-    $("table").css({"border-collapse":"collapse","border-spacing":"collapse","margin":"10px auto","background-color":"#272727"});
+    $("h1").css({"margin-left":"800px","font-family":"helvetica","color":"#FEFEFE"});
+    $("body").css("background-color","#F1A9F3");
+    $("table").css({"border-collapse":"collapse","border-spacing":"collapse","margin":"10px auto","background-color":"#91FBFE"});
     $("table tr td").css({"width":"90px","height":"90px","border":"1px solid black","font-size":"35px","text-align":"center"});
     $("table tr td:hover").css({"background-color":"#2c3531","cursor":"pointer"});
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
             move++;
             if (Winner() !=-1 && Winner() != ""){
                 if (Winner()=="X"){
-                    $("body").append("<div class='winner'><span>Ganaste</span></div>");
+                    $("body").append("<div class='winner'><span>Ganaros las X</span></div>");
                     $("body").append("<button onclick='location.reload()'>Jugar de nuevo</button>");
                     $(".winner").css("background-color","#61892f");
                     $("button").css("color","#61892f");
@@ -28,7 +28,7 @@ $(document).ready(function() {
                     $(".winner span").css({"font-size":"20px","display":"block","margin-top":"10px"});
                     $("button").css({"width":"240px","height":"50px","margin":"10px auto","display":"block","border":"none","background-color":"#27272727","font-size":"20px"});
                 }else{
-                    $("body").append("<div class='winner'><span>Ganaste</span></div>");
+                    $("body").append("<div class='winner'><span>Ganaron las O</span></div>");
                     $("body").append("<button onclick='location.reload()'>Jugar de nuevo</button>");
                     $(".winner").css("background-color","#e85a4f");
                     $("button").css("color","#e85a4f");
