@@ -1,11 +1,10 @@
-/*cometarios*/
 *{
     margin: 0;
     padding: 0;
 }
 header{
-    background: deepskyblue;
-    color: white;
+    background: cyan;
+    color: black;
 }
 h1{
     position: relative;
@@ -14,7 +13,7 @@ h1{
 hr{
     color: #00Afff;
 }
-main, footer, form, h3{
+main, footer, form, h2{
     width: 90%;
     max-width: 1000px;
     margin: auto;
